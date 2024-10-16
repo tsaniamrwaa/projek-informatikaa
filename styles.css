@@ -1,0 +1,38 @@
+/* Place your CSS styles in this file */
+body{background-color:darkseagreen;
+     border:3px solid papayawhip;
+}
+
+ul {
+        list-style-type: none;
+        background-color:lightblue;
+        text-align: center;  
+}
+
+li {
+       display: inline;
+       color: darkslateblue;
+}
+
+h1{
+
+    text-align: center;
+    font-family: "Times New Roman", sans-serif;
+    font-weight: bold;
+    color:darkslateblue;
+}
+
+p {
+text-align: justify;
+font-family: 'Times New Roman', Times, serif;
+font-size: medium;
+color: white
+}
+img {
+    display:block;
+    margin:auto;
+    
+}
+p#par2{
+    text-align: center;
+}
