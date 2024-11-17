@@ -1,6 +1,6 @@
 /* Place your CSS styles in this file */
-body{background-color:darkseagreen;
-     border:3px solid papayawhip;
+body{background-color:pink;
+     border:3px solid plum;
 }
 
 ul {
@@ -11,7 +11,7 @@ ul {
 
 li {
        display: inline;
-       color: darkslateblue;
+       color: black;
 }
 
 h1{
@@ -19,7 +19,7 @@ h1{
     text-align: center;
     font-family: "Times New Roman", sans-serif;
     font-weight: bold;
-    color:darkslateblue;
+    color: black
 }
 
 p {
