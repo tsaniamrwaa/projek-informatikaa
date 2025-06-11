@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <title>Tes Kepribadian Warna</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <h1>Tes Kepribadian Berdasarkan Warna</h1>
+  <p>Pilih warna favoritmu:</p>
+
+  <div class="button-container">
+    <button class="color-button" style="background: white; color: black;" onclick="showPersonality('Putih')">Putih</button>
+    <button class="color-button" style="background: black;" onclick="showPersonality('Hitam')">Hitam</button>
+    <button class="color-button" style="background: blue;" onclick="showPersonality('Biru')">Biru</button>
+    <button class="color-button" style="background: gray;" onclick="showPersonality('Abu-abu')">Abu-abu</button>
+    <button class="color-button" style="background: pink;" onclick="showPersonality('Pink')">Pink</button>
+    <button class="color-button" style="background: red;" onclick="showPersonality('Merah')">Merah</button>
+    <button class="color-button" style="background: green;" onclick="showPersonality('Hijau')">Hijau</button>
+    <button class="color-button" style="background: purple;" onclick="showPersonality('Ungu')">Ungu</button>
+    <button class="color-button" style="background: yellow; color: black;" onclick="showPersonality('Kuning')">Kuning</button>
+    <button class="color-button" style="background: orange;" onclick="showPersonality('Orange')">Orange</button>
+    <button class="color-button" style="background: brown;" onclick="showPersonality('Coklat')">Coklat</button>
+  </div>
+
+  <div id="result"></div>
+
+  <script>
+    function showPersonality(color) {
+      const descriptions = {
+        "Putih": "Penyuka warna putih merupakan orang yang mempunyai cara pikir logis. Mereka juga sangat teliti dalam hal penampilan. Selain itu, mereka selalu memiliki target dari apa yang mereka kerjakan.",
+        "Hitam": "Penyuka warna hitam biasanya sering mengalami perubahan suasana hati dan tertarik dengan hal-hal baru. Selain itu, mereka juga lebih sensitif dan kreatif.",
+        "Biru": "Penyuka warna biru memiliki sifat yang menenangkan dan bisa diandalkan. Mereka suka keharmonisan, mudah bergaul, dan mengetahui etika pergaulan dengan baik.",
+        "Abu-abu": "Penggemar warna abu memiliki sifat yang datar, membosankan, dan tidak pasti. Mereka takut terhadap komitmen.",
+        "Pink": "Penyuka warna pink cenderung polos, kekanakan, sensitif, dan suka mencari perhatian.",
+        "Merah": "Penggemar warna merah sangat percaya diri, ulet, dan bisa memikat orang lain dengan kepribadiannya.",
+        "Hijau": "Penyuka warna hijau suka jujur dan setia, tetapi terlalu memikirkan pendapat orang lain.",
+        "Ungu": "Penyuka warna ungu memiliki kesan artistik dan unik, serta menghargai orang lain.",
+        "Kuning": "Kuning adalah warna yang ceria, optimis, dan suka berbagi pengetahuan.",
+        "Orange": "Orange menggambarkan karakter yang ramah dan suka menjadi pusat perhatian.",
+        "Coklat": "Penggemar warna cokelat menyukai kesederhanaan dan kenyamanan, serta tidak suka menjadi pusat perhatian."
+      };
+
+      const resultDiv = document.getElementById("result");
+      resultDiv.innerHTML = descriptions[color] ? `<strong>Warna Favoritmu: ${color}</strong><br><br>${descriptions[color]}` : "Deskripsi tidak ditemukan.";
+    }
+  </script>
+
+</body>
+</html>
